@@ -28,7 +28,8 @@ export default function Create(){
         .then(result=>{
           console.log(result);
           const lastid = result.id;
-          router.push(`/read/${lastid}`)
+          router.refresh();
+          router.push(`/read/${lastid}`);
         })
     }}>
       <p>
