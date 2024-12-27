@@ -1,4 +1,5 @@
 import ListsInput from "./listsInput";
+import DeleteButton from "./deleteButton";
 
 export default async function ToDoList(){
   const resp = await fetch(process.env.NEXT_PUBLIC_API_URL+'lists', {cache: 'no-store'})
@@ -10,8 +11,9 @@ export default async function ToDoList(){
       <ListsInput />
       <ul>
         {lists.map((list) => (
-          <li key={list.id} data-testid="task-item">
-            {list.content}
+          <li key={list.id} style={{width:"200px"}}>
+            {list.task}
+            <DeleteButton id={list.id} />
           </li>
         ))}
       </ul>

@@ -1,10 +1,5 @@
 {
-  "lists" : [
-    {
-      "id": "1",
-      "content": "a"
-    }
-  ],
+  "lists": [],
   "topics": [
     {
       "id": "1",

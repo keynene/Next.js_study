@@ -26,7 +26,6 @@ export default function Create(){
       fetch(process.env.NEXT_PUBLIC_API_URL+'topics', options)
         .then(res=>res.json())
         .then(result=>{
-          console.log(result);
           const lastid = result.id;
           router.push(`/read/${lastid}`);
           router.refresh();
