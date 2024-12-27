@@ -9,6 +9,7 @@ export default function Control(){
 
   return(
     <ul>
+      <li><Link href="/todolist">ToDoList</Link></li>
       <li><Link href="/create">Create</Link></li>
       { id && (
         <> 

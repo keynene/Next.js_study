@@ -1,4 +1,10 @@
 {
+  "lists" : [
+    {
+      "id": "1",
+      "content": "a"
+    }
+  ],
   "topics": [
     {
       "id": "1",
@@ -19,11 +25,6 @@
       "id": "ac12",
       "title": "react",
       "body": "react is ..."
-    },
-    {
-      "id": "d690",
-      "title": "a",
-      "body": "a"
     }
   ],
   "posts": [
