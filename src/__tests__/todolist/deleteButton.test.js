@@ -10,11 +10,8 @@ describe("DeleteButton Component", () => {
   it("mocks useRouter correctly", () => {
     const mockPush = jest.fn();
     useRouter.mockReturnValue({ push: mockPush });
-
     render(<DeleteButton id={1} />);
-
     
-  
     expect(useRouter).toHaveBeenCalled(); // useRouter 호출 여부 확인
   });
 
