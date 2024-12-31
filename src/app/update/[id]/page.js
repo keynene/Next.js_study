@@ -7,7 +7,6 @@ export default function Update(){
   const router = useRouter();
   const params = useParams();
   const id = params.id;
-
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
 
